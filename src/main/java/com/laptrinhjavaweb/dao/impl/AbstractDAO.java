@@ -24,7 +24,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 			String url = resourceBundle.getString("url");
 			String user = resourceBundle.getString("user");
 			String password = resourceBundle.getString("password");*/
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/jspservletjdbc";
 			String user = "root";
 			String password = "123456";
