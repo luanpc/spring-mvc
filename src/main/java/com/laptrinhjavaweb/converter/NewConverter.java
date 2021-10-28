@@ -17,9 +17,17 @@ public class NewConverter {
 		result.setCategoryCode(entity.getCategory().getCode());
 		return result;
 	}
-	
+	//Create new
 	public NewEntity toEntity(NewDTO dto) {
 		NewEntity result = new NewEntity();
+		result.setTitle(dto.getTitle());
+		result.setShortDescription(dto.getShortDescription());
+		result.setContent(dto.getContent());
+		result.setThumbnail(dto.getThumbnail());
+		return result;
+	}
+	// Update new
+	public NewEntity toEntity(NewEntity result, NewDTO dto) {
 		result.setTitle(dto.getTitle());
 		result.setShortDescription(dto.getShortDescription());
 		result.setContent(dto.getContent());
