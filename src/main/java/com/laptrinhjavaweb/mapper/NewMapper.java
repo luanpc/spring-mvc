@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import com.laptrinhjavaweb.model.NewModel;
 
+// Dung` DTO thi k mapper nua
 public class NewMapper implements RowMapper<NewModel> {
 
 	@Override
